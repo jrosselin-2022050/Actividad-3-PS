@@ -1,0 +1,409 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeOpiniones",
+    "dateExported": "2024-03-02T16:01:01.148Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "65c2de10-0b62-426f-bcfd-b59548c589e0",
+            "name": "Usuarios",
+            "containerId": "",
+            "created": "2024-02-28T03:48:58.820Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d23b94a6-dd73-4adf-8c05-9333edfa9d88",
+            "name": "Publicaciones",
+            "containerId": "",
+            "created": "2024-02-29T22:15:05.621Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e738bce3-1c97-4585-a42c-2f8be6f78377",
+            "name": "Categorias",
+            "containerId": "",
+            "created": "2024-03-01T21:42:42.540Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "cfc970a9-f379-41f8-ace3-fee875588eb5",
+            "name": "Comentarios",
+            "containerId": "",
+            "created": "2024-03-01T21:49:09.516Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8319719e-ca34-442b-80a8-be1125ecd933",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "65c2de10-0b62-426f-bcfd-b59548c589e0",
+            "name": "RegistrarUsuario",
+            "url": "localhost:3200/registro",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-28T03:49:09.649Z",
+            "modified": "2024-03-01T20:33:50.799Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Pablo"
+                    },
+                    {
+                        "name": "apellido",
+                        "value": "Rosselin"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "PabloRoss"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "Pablo23@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b309eaf1-0ebb-4763-beec-6ea2b44c0c8f",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "65c2de10-0b62-426f-bcfd-b59548c589e0",
+            "name": "LoginUsuario",
+            "url": "localhost:3200/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-28T04:29:15.929Z",
+            "modified": "2024-03-02T15:23:51.099Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario",
+                        "value": "Dalvarado-2022037"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "dalvarado-20220370@kinal.edu.gt",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2260b914-6a77-4fdc-8d2a-3c605d0082f9",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "65c2de10-0b62-426f-bcfd-b59548c589e0",
+            "name": "EditarPerfil",
+            "url": "localhost:3200/EditarPerfil/65e23baea0f2bc32b20fe1e8",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-29T21:59:03.709Z",
+            "modified": "2024-03-01T20:41:28.838Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario",
+                        "value": "PabloClavito"
+                    },
+                    {
+                        "name": "apellido",
+                        "value": "Corzo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5127812e-88d3-403b-b53a-f6fcdae7fa19",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "d23b94a6-dd73-4adf-8c05-9333edfa9d88",
+            "name": "NuevaPublicacion",
+            "url": "localhost:3200/NuevaPublicacion/65e24cc8286dfa0c7ac28a31",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-29T22:15:16.097Z",
+            "modified": "2024-03-01T22:59:44.763Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Soy Platino en rocket league"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "Ayer en la noche logre subir a platino"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b855df45-5a15-43a6-9ad1-5192d670237d",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "d23b94a6-dd73-4adf-8c05-9333edfa9d88",
+            "name": "VerPublicaciones",
+            "url": "localhost:3200/VerPublicaviones",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-29T22:46:35.917Z",
+            "modified": "2024-02-29T22:47:16.616Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b6a30875-b08b-496f-bb89-ef0a2132bbe2",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "d23b94a6-dd73-4adf-8c05-9333edfa9d88",
+            "name": "editarPublicacion",
+            "url": "localhost:3200/editarPublicacion/65e1055f177d46e12b6e05fc",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-01T18:58:03.598Z",
+            "modified": "2024-03-02T15:49:56.077Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Hola"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "a"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "81901aff-4edb-4fc1-9d32-8d4079960c8b",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "d23b94a6-dd73-4adf-8c05-9333edfa9d88",
+            "name": "eliminarPublicacion",
+            "url": "localhost:3200/eliminarPublicacion/65e349d122ede430e8c15da4",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-01T19:06:49.905Z",
+            "modified": "2024-03-02T16:00:08.995Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "{{token}}",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "afaa7ec2-387a-4c28-a94f-1a3c9d5ade26",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "e738bce3-1c97-4585-a42c-2f8be6f78377",
+            "name": "nuevaCategooria",
+            "url": "localhost:3200/nuevaCategoria",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-01T21:42:51.879Z",
+            "modified": "2024-03-01T21:47:56.841Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "a"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "a"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f1f3405-c0af-449a-9717-aa768ba84cdd",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "e738bce3-1c97-4585-a42c-2f8be6f78377",
+            "name": "ListarCategoriias",
+            "url": "localhost:3200/verCategorias",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-01T21:43:04.568Z",
+            "modified": "2024-03-01T21:47:42.798Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4decddee-df50-4e53-9dfb-3364024bfbc0",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "e738bce3-1c97-4585-a42c-2f8be6f78377",
+            "name": "EliminarCategoria",
+            "url": "localhost:3200/eliminarCategoria/65e24d0c286dfa0c7ac28a36",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-01T21:43:14.620Z",
+            "modified": "2024-03-01T21:48:44.406Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "26ea3e57-a4ac-424f-95ac-3af4fe957815",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "cfc970a9-f379-41f8-ace3-fee875588eb5",
+            "name": "nuevoComentario",
+            "url": "localhost:3200/NuevoComentario/65e1055f177d46e12b6e05fc",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-03-01T21:49:17.286Z",
+            "modified": "2024-03-02T15:31:13.138Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comentario",
+                        "value": "HOla "
+                    },
+                    {
+                        "name": "token",
+                        "value": "{{token}}",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d1b0e26-eb29-49bd-a106-05b88ba816fd",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "cfc970a9-f379-41f8-ace3-fee875588eb5",
+            "name": "EditarComentario",
+            "url": "localhost:3200/EditarComentario/65e25ca4c2daf0ac9b8cb4bf",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-03-01T21:49:29.890Z",
+            "modified": "2024-03-01T23:18:14.939Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comentario",
+                        "value": "a"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a120419f-f465-4552-a48a-b4d22bac0b17",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "cfc970a9-f379-41f8-ace3-fee875588eb5",
+            "name": "EliminarComentario",
+            "url": "localhost:3200/eliminarComentario/65e34425b509f93f92e9c36c",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2024-03-01T21:50:55.265Z",
+            "modified": "2024-03-02T15:58:46.890Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "76b9dfd6-ca70-4904-aae5-6ed757d6952d",
+            "colId": "1e91f4da-32b7-47a7-9ba4-36a64dbdaa5a",
+            "containerId": "cfc970a9-f379-41f8-ace3-fee875588eb5",
+            "name": "VertodosLosComentarios",
+            "url": "localhost:3200/listarComentarios",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-03-01T21:51:26.564Z",
+            "modified": "2024-03-02T15:39:41.912Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "envId": "47d9a2c3-ac08-4548-b43d-ba439a9fa074"
+    }
+}

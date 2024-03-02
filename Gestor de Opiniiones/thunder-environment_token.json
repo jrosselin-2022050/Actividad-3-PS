@@ -1,0 +1,12 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "token",
+    "dateExported": "2024-03-02T16:01:11.571Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMDczOGUyNWVlODIzYTBkMDBjZWYiLCJ1c3VhcmlvIjoiRGFsdmFyYWRvLTIwMjIwMzciLCJjb3JyZW8iOiJkYWx2YXJhZG8tMjAyMjAzNzBAa2luYWwuZWR1Lmd0Iiwibm9tYnJlIjoiRG91Z2xhcyIsImlhdCI6MTcwOTM5MzAzMSwiZXhwIjoxNzA5NDI5MDMxfQ.lFH4JykjWXlxomUBkTP7jMxyaOYgqJF0wMjq7v0Iqi8"
+        }
+    ]
+}
